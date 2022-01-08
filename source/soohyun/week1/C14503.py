@@ -5,7 +5,7 @@ N, M = map(int, input().split())
 r, c, d= map(int, input().split())
 graph = [list(map(int, input().split())) for _ in range(N)]
 dx, dy = [-1, 0, 1, 0], [0, 1, 0, -1] # 북동남서
-cnt = 0 # 청소하는 칸의 개수
+cnt = 0 # 청소한 칸의 개수
 
 def clean(x, y, d):
     global cnt
