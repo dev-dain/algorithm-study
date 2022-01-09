@@ -1,5 +1,6 @@
+# 완전탐색 BFS
 def solution(numbers, target):
-    answer = 0
+    ans = 0
     check = [0]
 
     for num in numbers:
@@ -11,6 +12,6 @@ def solution(numbers, target):
 
     for i in check:
         if i == target:
-            answer += 1
+            ans += 1
 
-    return answer
+    return ans
