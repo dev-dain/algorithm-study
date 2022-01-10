@@ -75,7 +75,6 @@ def bfs():
 wall(0) # 벽을 세운 후 바이러스를 퍼지게 하여 안전 영역의 최대값을 구한다
 print(answer)
 ```
-
 ### [백준 14503 로봇 청소기](https://www.acmicpc.net/problem/14503)
 - 문제 유형: 구현, 시뮬레이션
 - 시간 복잡도: O(N^2)
