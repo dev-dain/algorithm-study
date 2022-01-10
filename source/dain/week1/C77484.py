@@ -1,3 +1,4 @@
+# 01-08 (수정)
 # https://programmers.co.kr/learn/courses/30/lessons/77484
 def solution(lottos, win_nums):
   lotto = set(sorted(lottos))
