@@ -1,5 +1,3 @@
-from collections import deque
-
 R, C, T = map(int, input().split())
 room = [list(map(int, input().split())) for _ in range(R)]
 dx = [0, -1, 0, 1]
