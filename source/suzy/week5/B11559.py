@@ -25,9 +25,7 @@ def down():
             else:	# 비면 뿌요 없음
                 board[x][y] = '.'
 
-board = []
-for _ in range(12):
-    board.append(list(input()))
+board = [list(input()) for _ in range(12)]
 
 chk = 0
 answer = 0
@@ -37,12 +35,14 @@ while True:		# 새로 터지는 뿌요가 없을 때까지 반복
         for j in range(6):
             if board[i][j] != '.' and visited[i][j] == 0:
                 visited[i][j] = 1
-                q = deque([[i, j]])                
+                q = deque([[i, j]])
+                # print(q)             
                 stack = []	# 뿌요 위치를 기록할 스택
                 while q:
-                    now = q.popleft()
-                    stack.append(now)
-                    bfs(now[0], now[1])
+                    x,y = q.popleft()
+                    print(q)
+                    stack.append([x,y])
+                    bfs(x, y)
                 if len(stack) >= 4:	# 이어진 뿌요가 4개 이상일 때
                     chk = 1
                     for s in stack:
