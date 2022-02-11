@@ -1,3 +1,6 @@
+from xml.dom.minidom import Element
+
+
 r, c, t = map(int, input().split())
 room = [list(map(int, input().split())) for _ in range(r)]
 
@@ -24,8 +27,6 @@ def diffusion():
                     temp[cx][cy] += room[i][j]//5
                     cnt += 1
             temp[i][j] += room[i][j]-cnt*(room[i][j]//5)
-    temp[cleaner[0][0]][cleaner[0][1]] = -1
-    temp[cleaner[1][0]][cleaner[1][1]] = -1
     room = temp
 
 # 공기청정기 작동
@@ -51,6 +52,7 @@ for _ in range(t):
     diffusion()
     clean(cleaner[0][0], cleaner[0][1], [(0, 1), (-1, 0), (0, -1), (1, 0)])
     clean(cleaner[1][0], cleaner[1][1], [(0, 1), (1, 0), (0, -1), (-1, 0)])
+
 answer = 0
 for i in range(r):
     for j in range(c):
