@@ -12,6 +12,7 @@
     - 차이가 M 이상일 경우 중 가장 작은 값은 M 이므로 차이가 M과 같다면 M 을 출력하고 종료
 <br/><br/>
 - 코드
+```python
 import sys
 input = sys.stdin.readline
 # 입력
