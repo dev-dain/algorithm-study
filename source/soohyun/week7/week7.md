@@ -121,7 +121,7 @@ for pm in permutations(rot, k):
 print(ans)
 ```
 
-### [백준 1806 부분합](https://www.acmicpc.net/problem/1806)
+### [백준 17136 색종이 붙이기](https://www.acmicpc.net/problem/17136)
 - 문제 유형: 완전탐색, 백트랙킹
 - 시간 복잡도: O(N^3)
 - 공간 복잡도: O(6)
