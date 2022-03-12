@@ -44,11 +44,10 @@ for _ in range(m):
     clouds = [] # 새 구름 생성
     for i in range(n):
         for j in range(n):
-            if graph[i][j] <= 1: # 물 양이 1이면 제외
+            if graph[i][j] <= 1 or not cloud_loc[i][j]: # 물 양이 2보다 작거나 구름이 있던 자리면 제외
                 continue
-            if not cloud_loc[i][j]:
-                clouds.append((i,j))
-                graph[i][j] -= 2
+            clouds.append((i,j))
+            graph[i][j] -= 2
 print(sum(sum(graph, [])))
 
 
