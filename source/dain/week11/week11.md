@@ -99,4 +99,4 @@ def solution(begin, target, words):
 ```
 - 시간복잡도 : O(N^2)
 - 공간복잡도 : O(N)
-- 문제 유형 : BFS, 문자열
+- 문제 유형 : BFS, 문자열 
